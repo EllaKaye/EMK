@@ -1,4 +1,4 @@
-Misc functions I find useful
+Miscellaneous functions I find useful
 
 [![Travis-CI Build Status](https://travis-ci.org/EllaKaye/EMK.svg?branch=master)](https://travis-ci.org/EllaKaye/EMK)
 

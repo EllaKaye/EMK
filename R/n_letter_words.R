@@ -7,6 +7,7 @@
 #' @param num_letters how many letters to use in the word (an integer between 1 and 26)
 #' @param as_vector logical
 #' @return If as_vector = FALSE, a one column tibble with colname "word" containing all words of length n made with a combination of num_letter letters. If as_vector = TRUE, a vector of all such words.
+#' @author Ella Kaye
 #' @export
 n_letter_words <- function(n, case = c("upper", "lower"), num_letters = 26, as_vector = FALSE) {
 

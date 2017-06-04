@@ -22,4 +22,7 @@ If as_vector = FALSE, a one column tibble with colname "word" containing all wor
 \description{
 Create all words of length n from given number of letters
 }
+\author{
+Ella Kaye
+}
 
