@@ -4,15 +4,15 @@
 \alias{n_letter_words}
 \title{Create n-letter words}
 \usage{
-n_letter_words(n, case = c("upper", "lower"), num_letters = 26,
+n_letter_words(n, num_letters = 26, case = c("upper", "lower"),
   as_vector = FALSE)
 }
 \arguments{
 \item{n}{the length of the words}
 
-\item{case}{choose between upper or lower case letters}
-
 \item{num_letters}{how many letters to use in the word (an integer between 1 and 26)}
+
+\item{case}{choose between upper or lower case letters}
 
 \item{as_vector}{logical}
 }
@@ -21,6 +21,9 @@ If as_vector = FALSE, a one column tibble with colname "word" containing all wor
 }
 \description{
 Create all words of length n from given number of letters
+}
+\examples{
+n_letter_words(3)
 }
 \author{
 Ella Kaye
