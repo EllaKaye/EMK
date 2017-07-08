@@ -24,8 +24,8 @@ Create all words of length n from given number of letters
 }
 \examples{
 n_letter_words(3)
+n_letter_words(4, num_letters = 2, case = "lower", as_vector = TRUE)
 }
 \author{
 Ella Kaye
 }
-
