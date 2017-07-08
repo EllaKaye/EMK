@@ -5,6 +5,8 @@ Version: 0.1.0
 Author: Ella Kaye [aut, cre]
 Maintainer: Ella Kaye <ella.kaye@gmail.com>
 Description: Miscellaneous functions I find useful.
+URL: https://github.com/EllaKaye/EMK
+BugReports: https://github.com/EllaKaye/EMK/issues
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
