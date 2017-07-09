@@ -64,7 +64,7 @@ n_letter_words(5, num_letters = 2, case = "lower")
 `ggpres`
 --------
 
-Typically, if you have a plot designed to look good in print or on the web, when it is included in a presentation, the text on the title, axes, legend and facet strips is too small to be read by everyone in the room. `ggpres` fixes that by taking a `ggplot` plot and increasing the size of the text. Usage is `ggpres(g, title_size = 24, text_size = 18)`. `ggpres` only deals with text size, and further adjustments to the plot may still be necessary to make it appropriate for a presentation, such as increasing point size or line width. Thanksfully, the modular nature of `ggplot` makes it easy to make such adjustments after passing the plot through `ggpres`
+Typically, if you have a plot designed to look good in print or on the web, when it is included in a presentation, the text on the title, axes, legend and facet strips is too small to be read by everyone in the room. `ggpres` fixes that by taking a `ggplot` plot and increasing the size of the text. Usage is `ggpres(g, title_size = 24, text_size = 18)`. `ggpres` only deals with text size, and further adjustments to the plot may still be necessary to make it appropriate for a presentation, such as increasing point size or line width. Thanksfully, the modular nature of `ggplot` makes it easy to make such adjustments after passing the plot through `ggpres`.
 
 ``` r
 library(ggplot2)
