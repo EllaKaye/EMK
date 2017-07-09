@@ -50,7 +50,7 @@ g <- ggplot(mpg, aes(displ, hwy)) +
   facet_wrap(~class, scales = "free") + 
    ggtitle("A faceted plot")
 g
-ggpres(g, text_size = 16) +
+ggpres(g, text_size = 15) +
   geom_point(size = 2)
 ```
 

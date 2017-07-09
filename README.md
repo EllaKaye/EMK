@@ -78,7 +78,7 @@ g
 <img src="README-ggpres_example-1.png" width="100%" />
 
 ``` r
-ggpres(g, text_size = 16) +
+ggpres(g, text_size = 15) +
   geom_point(size = 2)
 ```
 
