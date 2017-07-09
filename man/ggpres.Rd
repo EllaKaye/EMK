@@ -20,11 +20,14 @@ A \code{ggplot} graph
 Change the size of text on a \code{ggplot} so that a plot designed to look good in print is readable when included in a slide in a presentation (or vice verse)
 }
 \examples{
-mt <- ggplot2::ggplot(mtcars, ggplot2::aes(mpg, wt, colour = factor(cyl))) +
-   ggplot2::geom_point() +
-   ggplot2::facet_grid(. ~ cyl, scales = "free") +
-   ggplot2::ggtitle("A faceted graph")
-ggpres(mt)
+
+library(ggplot2)
+g <- ggplot(mpg, aes(displ, hwy)) +
+ geom_point() +
+ facet_wrap(~class, scales = "free") +
+ ggtitle("A faceted plot")
+g2 <- ggpres(g)
+g2 + geom_point(size = 2)
 }
 \author{
 Ella Kaye

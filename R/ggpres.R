@@ -7,11 +7,14 @@
 #' @return A \code{ggplot} graph
 #' @author Ella Kaye
 #' @examples
-#' mt <- ggplot2::ggplot(mtcars, ggplot2::aes(mpg, wt, colour = factor(cyl))) +
-#'    ggplot2::geom_point() +
-#'    ggplot2::facet_grid(. ~ cyl, scales = "free") +
-#'    ggplot2::ggtitle("A faceted graph")
-#' ggpres(mt)
+#'
+#' library(ggplot2)
+#' g <- ggplot(mpg, aes(displ, hwy)) +
+#'  geom_point() +
+#'  facet_wrap(~class, scales = "free") +
+#'  ggtitle("A faceted plot")
+#' g2 <- ggpres(g)
+#' g2 + geom_point(size = 2)
 #' @export
 ggpres <- function(g, title_size = 24, text_size = 18) {
 
