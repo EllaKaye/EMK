@@ -2,3 +2,5 @@
 
 export(ggpres)
 export(n_letter_words)
+export(same_elements)
+export(zero_range)
