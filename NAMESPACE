@@ -2,5 +2,6 @@
 
 export(ggpres)
 export(n_letter_words)
+export(pdf_digraph_gv)
 export(same_elements)
 export(zero_range)
