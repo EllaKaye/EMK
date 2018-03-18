@@ -7,7 +7,7 @@
 pdf_digraph_gv(filename, gv)
 }
 \arguments{
-\item{filename}{String of filename to save to, with exention .png}
+\item{filename}{String of filename to save to, with exention .pdf}
 
 \item{gv}{String of a .gv filename. This file must be stored in the same working directory}
 }
@@ -19,6 +19,6 @@ Include digraphs in pdf output of Rmarkdown
 }
 \examples{
 \dontrun{
-pdf_digraph_gv("graph.png", "graph.gv")
+pdf_digraph_gv("graph.pdf", "graph.gv")
 }
 }
