@@ -15,6 +15,11 @@ Imports:
     dplyr,
     tidyr
 RoxygenNote: 6.0.1
-Suggests: ggplot2,
-    testthat
+Suggests: 
+    ggplot2,
+    testthat,
+    DiagrammeR,
+    DiagrammeRsvg,
+    knitr,
+    rsvg
 Roxygen: list(markdown = TRUE)

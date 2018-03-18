@@ -9,9 +9,31 @@
 #' @export
 
 pdf_digraph_gv <- function(filename, gv){
+
+  if (!requireNamespace("DiagrammeR", quietly = TRUE)) {
+    stop("Package \"DiagrammeR\" needed for this function to work. Please install it.",
+         call. = FALSE)
+  }
+
+  if (!requireNamespace("DiagrammeRsvg", quietly = TRUE)) {
+    stop("Package \"DiagrammeRsvg\" needed for this function to work. Please install it.",
+         call. = FALSE)
+  }
+
+  if (!requireNamespace("knitr", quietly = TRUE)) {
+    stop("Package \"knitr\" needed for this function to work. Please install it.",
+         call. = FALSE)
+  }
+
+  if (!requireNamespace("rsvg", quietly = TRUE)) {
+    stop("Package \"rsvg\" needed for this function to work. Please install it.",
+         call. = FALSE)
+  }
+
+
   g <- DiagrammeR::grViz(gv)
 
-  capture.output({
+  utils::capture.output({
     DiagrammeRsvg::export_svg(g) %>% charToRaw() %>% rsvg::rsvg_png(filename)
   })
 
