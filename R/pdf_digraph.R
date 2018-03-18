@@ -1,6 +1,6 @@
 #' Include digraphs in pdf output of Rmarkdown
 #' @param filename String of filename to save to, with exention .pdf
-#' @param gv String of a .gv filename. This file must be stored in the same working directory
+#' @param code Either a string defining a digraph in the DOT language, or a string of a .gv filename (this file must be stored in the same working directory).
 #' @return Plots a digraph in the pdf output of an Rmarkdown document, when function is embedded in a code chunk.
 #' @examples
 #' \dontrun{
@@ -8,7 +8,7 @@
 #' }
 #' @export
 
-pdf_digraph_gv <- function(filename, gv){
+pdf_digraph <- function(filename, code){
 
   if (!requireNamespace("DiagrammeR", quietly = TRUE)) {
     stop("Package \"DiagrammeR\" needed for this function to work. Please install it.",
@@ -31,12 +31,13 @@ pdf_digraph_gv <- function(filename, gv){
   }
 
 
-  g <- DiagrammeR::grViz(gv)
+  g <- DiagrammeR::grViz(code)
 
   utils::capture.output({
     DiagrammeRsvg::export_svg(g) %>% charToRaw() %>% rsvg::rsvg_pdf(filename)
   })
 
-  #cat(filename)
   knitr::include_graphics(filename)
 }
+
+
