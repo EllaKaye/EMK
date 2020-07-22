@@ -28,7 +28,7 @@ n_letter_words <- function(n, num_letters = 26, case = c("upper", "lower"), as_v
 
   let <- let[1:num_letters]
 
-  out <- dplyr::as_data_frame(expand.grid(rep(list(let), n)))
+  out <- dplyr::as_tibble(expand.grid(rep(list(let), n)))
   out <- tidyr::unite(out, word, 1:n, sep = "")
 
   if (as_vector) out <- out[[1]]
