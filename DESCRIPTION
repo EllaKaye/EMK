@@ -1,7 +1,7 @@
 Package: EMK
 Type: Package
 Title: Misc functions
-Version: 0.1.0
+Version: 0.1.1
 Author: Ella Kaye [aut, cre]
 Maintainer: Ella Kaye <ella.kaye@gmail.com>
 Description: Miscellaneous functions I find useful.
@@ -14,7 +14,7 @@ Imports:
     tibble,
     dplyr,
     tidyr
-RoxygenNote: 6.1.0
+RoxygenNote: 7.1.2
 Suggests: 
     ggplot2,
     testthat,

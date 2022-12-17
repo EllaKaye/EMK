@@ -4,8 +4,12 @@
 \alias{n_letter_words}
 \title{Create n-letter words}
 \usage{
-n_letter_words(n, num_letters = 26, case = c("upper", "lower"),
-  as_vector = FALSE)
+n_letter_words(
+  n,
+  num_letters = 26,
+  case = c("upper", "lower"),
+  as_vector = FALSE
+)
 }
 \arguments{
 \item{n}{the length of the words}
